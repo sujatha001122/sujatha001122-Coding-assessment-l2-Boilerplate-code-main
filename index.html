@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+
+</head> 
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="product-images">
+                <img id="main-image" src="" alt="Main Product Image" width="100%">
+                <div class="thumbnail-images"></div>
+            </div>
+        </div>
+        <div class="column1">
+            <div class="section" id="title">
+                <label id="product-vendor"></label>
+                <h3 id="product-title"></h3>
+            </div>
+            <div class="section">
+             <div style="display: flex; gap:50px;">
+                <p id="product-price"></p>
+                <p id="discount" style="color:red"></p>
+             </div>
+                <div id="compare-at-price"></div>
+            </div>
+            <div class="section">
+                <label>Choose a Color</label>
+                <div id="color-selector"></div>
+            </div>
+            <div class="section">
+                <label>Choose a Size</label>
+                <div id="size-selector"></div>
+                <div style="display:flex; gap:60px; padding-bottom:10px;">
+                    <div class="quantity">
+                        <div class="quantity-selector">
+                            <button id="decrement-btn">-</button>
+                            <input type="text" id="quantity-display" value="1">
+                            <button id="increment-btn">+</button>
+                        </div>
+                    </div>
+                    <button id="add-to-cart-button"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <div id="add-to-cart-message" style="display: none;"></div>
+            </div>
+            <div class="section">
+                <span id="product-description"style="color:gray;"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> 
+
+
